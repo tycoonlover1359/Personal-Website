@@ -1,0 +1,246 @@
+{% extends "/Partials/base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<section class="hero is-info">
+    <img src="/static/images/Profile Background.png">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-size-1-desktop is-size-2-mobile">Tycoonlover1359</h1>
+            <h2 class="subtitle is-size-3-desktop is-size-4-mobile">Gamer & Web Developer.</h2>
+        </div>
+    </div>
+</section>
+<section id="welcome" class="content section">
+    <h1 class="title">Welcome.</h1>
+    <p class="subtitle">Hi there. I'm Tycoonlover1359, but you can call me Tycoon. Welcome to my website.</p>
+    <hr>
+    <p class="is-size-5">I'm gamer and web developer. I specialize in connecting front ends with back ends, especially in cases where no one thought that a certain front end <i>could</i> connect to a back end. I'm especially a fan of Amazon Web Services, or AWS. For as long as I've been a web developer, I have enjoyed using AWS far more than competing options such as Microsoft Azure and Google Cloud Platform.</p>
+    <p class="is-size-5">I enjoy making everything I can myself (with some help from StackOverflow, YouTube and some internet searching), and I do so using either Roblox Lua (for things I build on Roblox) or Python (for everything <i>but</i> Roblox). With the exception of many of the images here (basically all the ones that don't include my Minecraft character) and the CSS I used (which, if you're wondering, I use the <a class="has-text-dark" href="https://bulma.io/">Bulma</a> CSS Framework), I made the rest of the site myself.</p>
+    <p class="is-size-5">The site itself is a relatively lightweight Python-Flask web application, and it's hosted on <a class="has-text-dark" href="https://heliohost.org/">HelioHost</a>—a free (and very good) online web host.</p>
+    <hr>
+    <p class="is-size-5">Alrighty. That's enough about me. Why don't you take a look around?</p>
+</section>
+<section id="gaming" class="section">
+    <h1 class="title is-size-1">Gaming</h1>
+    <div class="columns">
+        <div class="column">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-square">
+                        <img src="/static/images/Minecraft Picture.png" alt="Minecraft Title Screen">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/3D Minecraft Block.png" alt="3D Minecraft Block">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-4">Minecraft</p>
+                            <p class="subtitle is-6">From Mojang Studios</p>
+                        </div>
+                    </div>
+                    <div class="content has-text-dark">
+                        As of August 2020, Minecraft is the world's best selling game—and I've been playing it since 2014. I've played on numerous servers, big and small. From the largest, such as Hypixel, to private modded Minecraft servers, I enjoy playing with friends (and non-friends); Minecraft is also where I get to show off my Redstone and logical know-how.
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="https://www.reddit.com/r/Minecraft/comments/b67se7/made_a_beautiful_grass_block_using_blender_as_a/" class="card-footer-item">3D Minecraft Grass Block</a>
+                    <a href="https://minecraft.net/" class="card-footer-item">Minecraft Website</a>
+                </footer>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-square">
+                        <img src="/static/images/Roblox Picture.png" alt="Roblox Gameplay">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/Roblox Logo.png" alt="Roblox Logo">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-4">Roblox</p>
+                            <p class="subtitle is-6">From the Roblox Corporation</p>
+                        </div>
+                    </div>
+                    <div class="content has-text-dark">
+                        Since before I got Minecraft, I've also been playing Roblox. In the time I've been on Roblox, I've always loved and enjoyed playing nearly any tycoon game on the platform—you might be able to guess where my username came from. Since then, I've started developing on the platform, mainly as a Web Developer, integrating things into Roblox that some never thought imaginable.
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="https://corp.roblox.com/press-kit/" class="card-footer-item">Roblox Logo</a>
+                    <a href="https://www.roblox.com/users/22805614/profile" class="card-footer-item">Roblox Profile</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <h1 class="title is-size-1">Programming</h1>
+    <div class="columns">
+        <div class="column">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-square">
+                        <img src="/static/images/AWS Picture.png" alt="Amazon Web Services Management Console">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/AWS Smile Logo.png" alt="Amazon Web Services Smile Logo">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-4">Amazon Web Services</p>
+                            <p class="subtitle is-6">From Amazon, Inc.</p>
+                        </div>
+                    </div>
+                    <div class="content has-text-dark">
+                        Amazon Web Services is an extemely powerful service that offers high availability and durability of near anything you can do on the platform. Ever since I've been a web developer, I've used (or thought about how I can use) AWS in nearly all my projects—either to save on a certain resource, or because I want to tinker with something. Many scoff at the idea of using AWS for anything but business or enterprise grade applications, but I think that with careful planning and coding, AWS is a great way to boost even the simplest of projects.
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="https://aws.amazon.com/" class="card-footer-item">AWS Smile Logo</a>
+                    <a href="https://aws.amazon.com/" class="card-footer-item">AWS Website</a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-square">
+                        <img src="/static/images/Python Picture.png" alt="Python Website">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/Python Logo.png" alt="Python Logo">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-4">Python</p>
+                            <p class="subtitle is-6">From the Python Software Foundation</p>
+                        </div>
+                    </div>
+                    <div class="content has-text-dark">
+                        I've been coding with Python ever since May of 2020, when I decided to learn it during the Coronavirus epidemic. Since then, Python has become my favorite programming language of any that I've used or experimented with. Python's simple but powerful syntax is an absolute joy for me to use—and I can use it to do nearly anything I can imagine. I enjoy Python so much that I even used it to power the website you're looking at right now.
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="https://engineering.fb.com/production-engineering/python-in-production-engineering/" class="card-footer-item">Python Logo</a>
+                    <a href="https://python.org/" class="card-footer-item">Python Website</a>
+                </footer>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-square">
+                        <img src="/static/images/Roblox Developer Picture.png" alt="Roblox Developer Website">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/Roblox Logo.png" alt="Roblox Logo">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-4">Roblox Lua</p>
+                            <p class="subtitle is-6">From the Roblox Corporation</p>
+                        </div>
+                    </div>
+                    <div class="content has-text-dark">
+                        The Roblox Platform's programming language is a heavily modified version of the Lua programming language—often dubbed <i>Roblox Lua</i>. Being that Roblox Lua is based on Lua, it features a fairly low learning curve, making starting on the platform incredibly simple for incoming developers. Despite its simplicity, developers have made incredible games on the platform. Since I'm a web developer <i>and</i> a fan of AWS, I've even made a Roblox Lua-compatible version of the AWS SDK, based on AWS' own Boto3 SDK, called Roblo3.
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="https://corp.roblox.com/press-kit/" class="card-footer-item">Roblox Logo</a>
+                    <a href="https://devforum.roblox.com/u/tycoonlover1359/summary" class="card-footer-item">Roblox Devforum Profile</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="programming" class="section">
+    <h1 class="title is-size-1">Contact Me</h1>
+    <h2 class="subtitle is-size-5">Now that you've read about me, why not tell me about yourself?</h2>
+    <div class="columns is-centered">
+        <div class="column is-one-third">
+            <div class="card">
+                <header class="card-header"><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                    <p class="card-header-title">Send Me a Message</p>
+                </header>
+                <div id="form" class="card-content">
+                {% if submit_success and submit_success == True %}
+                    <section class="section">
+                        <article class="message is-success">
+                            <div class="message-body">
+                                Hooray! Your message was successfully sent!
+                                <hr>
+                                If the email you provided was valid, you should receive an automated email from me shortly containing a copy of the message you sent me.
+                            </div>
+                        </article>
+                    </section>
+                {% elif submit_success == False %}
+                    <section class="section">
+                        <article class="message is-danger">
+                            <div class="message-body">
+                                Uh oh! Your message failed to send. Press the reload button then confirm that you want to resubmit the form.
+                            </div>
+                        </article>
+                    </section>
+                {% else %}
+                    <form action="#form" method="POST">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input name="name" class="input" type="text" placeholder="Tycoon Lover" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control">
+                                <input name="email" class="input" type="email" placeholder="hello@tycoon.com" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Subject</label>
+                            <div class="control">
+                                <input name="subject" class="input" type="text" placeholder="Hello!" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea name="message" class="textarea" placeholder="Hello, how are you doing today?" required></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-link">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "/Partials/base.html" %}
+{% block title %}Hello{% endblock %}
+{% block content %}
+<section class="hero is-info">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-size-1-desktop is-size-2-mobile">Hello</h1>
+            {% if subtitle %}
+                <h2 class="subtitle is-size-3-desktop is-size-4-mobile">{{ subtitle }}</h2>
+            {% endif %}
+        </div>
+    </div>
+</section>
+<article class="section">
+    {{ article|safe }}
+</article>
+{% endblock %}

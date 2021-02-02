@@ -1,0 +1,24 @@
+{% extends "/Partials/base.html" %}
+{% block title %}Internal Server Error{% endblock %}
+{% block content %}
+<section class="hero is-danger is-fullheight-with-navbar">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title is-1">😢</h1>
+            <br>
+            <h1 class="title">Uh oh!</h1>
+            <h2 class="subtitle">Internal Server Error</h2>
+            <hr>
+            <p>Something happened while the server was proccessing your request that caused it to error.</p>
+            <p>If you want, you can try submitting your request again to see if it works. Otherwise, contact tycoonlover1359 for assistance.</p>
+            {% if error_message %}
+                <br>
+                <p>The specifics of your error can are:</p>
+                <p>{{ error_message }}</p>
+            {% endif %}
+            <hr>
+            <a class="button" href="/">Return to Home</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

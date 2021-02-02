@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!-- Bulma Requirements -->
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+        <!-- Meta Tags -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Meta Tags - Content Security Policy -->
+
+        <!-- Title & Favicon -->
+        <title>
+            {% block title %}{% endblock %} - Tycoonlover1359
+        </title>
+        <link rel="icon" type="image/png" href="/static/images/Profile Icon.png">
+        
+        <!-- Arc.io Integration -->
+        <script async src="https://arc.io/widget.min.js#XMo2kYTk"></script>
+
+        <!-- Page-specific Header Elements -->
+        {% block header_extension %}{% endblock %}
+    </head>
+    {% include "/Partials/navbar.html" %}
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+    {% include "/Partials/footer.html" %}
+</html>

@@ -1,0 +1,51 @@
+{% extends "/Partials/base.html" %}
+{% block title %}Blog Home{% endblock %}
+{% block content %}
+<section class="hero is-info">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-size-1-desktop is-size-2-mobile">Life of Tycoon</h1>
+            <h2 class="subtitle is-size-3-desktop is-size-4-mobile">Random stuff I write about. Opinions are my own.</h2>
+        </div>
+    </div>
+</section>
+<section class="section">
+    {% if entries %}
+    <div class="columns is-multiline is-centered">
+        {% for entry in entries %}
+            <div class="column is-one-third">
+                <a href="/blog/post/{{ entry.post_id }}">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">{{ entry.title }}</p>
+                        </header>
+                        <div class="card-content content">
+                            Hello world!
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    {% else %}
+        <div class="columns is-centered">
+            <div class="column is-5">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <div class="level">
+                                    <div class="media-left">
+                                        <p class="is-size-1">😢</p>
+                                    </div>
+                                    <p class="is-size-5">Looks like there weren't any blog articles available...maybe try again some other time?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+</section>
+{% endblock %}
